@@ -4,6 +4,9 @@
   "dependencies": {
     "messages": "workspace:^1.0.0"
   },
+  "devDependencies": {
+    "typescript": "3.9.3"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {

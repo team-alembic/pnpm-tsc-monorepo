@@ -1,4 +1,6 @@
 importers:
+  .:
+    specifiers: {}
   packages/messages:
     dependencies:
       handlebars: 4.7.6
@@ -10,8 +12,11 @@ importers:
   projects/say:
     dependencies:
       messages: 'link:../../packages/messages'
+    devDependencies:
+      typescript: 3.9.3
     specifiers:
       messages: 'workspace:^1.0.0'
+      typescript: 3.9.3
 lockfileVersion: 5.1
 packages:
   /commander/2.20.3:
