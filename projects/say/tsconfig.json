@@ -1,28 +1,9 @@
 {
-  "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
-    "removeComments": true,
-    "resolveJsonModule": true,
-    "rootDir": "./src",
-    "outDir": "./lib",
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noFallthroughCasesInSwitch": true,
-    "esModuleInterop": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "declaration": true
-  },
+  "extends": "../../tsconfig.global.json",
   "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.test.ts", "src/**/*.spec.ts"]
+  "exclude": ["src/**/*.test.ts", "src/**/*.spec.ts"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./lib"
+  }
 }
